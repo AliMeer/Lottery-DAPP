@@ -5,15 +5,27 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+
   module: {
     loaders: [
       {
         exclude: /node_modules/,
-        loader: 'babel',
+        test: /\.js$/,
+        loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015', 'stage-1']
-        }
-      }
+        },
+        type: 'javascript/auto'
+      },
+      {
+        test: /\.json?$/,
+        loader: 'json-loader'
+    },
+    {
+      test: /\.jsx?$/,
+      loader: 'babel',
+      exclude: /node_modules/
+  }
     ]
   },
   resolve: {
