@@ -40,7 +40,6 @@ class App extends Component {
   }
   async enterUser() {
 
-    //const accounts = await web3.eth.getAccounts();
     this.setState({ message: 'Waiting on transaction success...' });
     await lottery.methods.enter().send({
       from: this.state.accounts[0],
