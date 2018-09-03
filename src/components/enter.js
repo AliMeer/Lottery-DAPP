@@ -12,7 +12,6 @@ class Enter extends Component {
             name: 'Anonymous',
             
         }
-
     }
     click() {
         this.props.parentMethod();

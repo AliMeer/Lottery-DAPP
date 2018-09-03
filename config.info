@@ -1,3 +1,7 @@
 rinkeby:
-contract address: 0x4050689597dD36919E193900c41E538D2c8dE002
-contract deployed with: 0xE5D5402Ee7F255fF733e2f4210a1646a4dcdbDaa
+Campaign contract address: 0x4050689597dD36919E193900c41E538D2c8dE002
+Campaign contract deployed with: 0xE5D5402Ee7F255fF733e2f4210a1646a4dcdbDaa
+
+Lottery contract deployed with: 0xE5D5402Ee7F255fF733e2f4210a1646a4dcdbDaa
+Contract deployed to:
+Lottery contract address: 0xa4691fa6D8E7Ef57C57A92b22f3120F6B44B8bC2
