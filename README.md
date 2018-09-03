@@ -1,25 +1,24 @@
-# ReduxSimpleStarter
+# Lottery Smart Contract and DApp
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+Ehtereum network lottery smart contract written in solidity.
+Web3 integreated React front end with node and redux.
 
-### Getting Started
 
-There are two methods for getting started with this repo.
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+### Deploy
+>Please edit "src/ethereum/deploy.js" to add your network mnomonic so that RINKEBY_MNEM is a string with
+>your mnemonic. You can also add your own network URL or infura api key/URL on line 8 so that PROVIDER_URL has 
+>the string equavalent of your specific netwrok URL or infura URL your api key. You can leave it as it is and use
+>my infura URL
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+Once done please run the following command on the command line while in ethereum folder location:
 
 ```
-> npm install
-> npm start
+npm run deploy
 ```
+
+This will output the address where the contract gets deployed and also the address that was used for deployment.
+
+You can use this contract address for further interactive testing on http://remix.ethereum.org/ 
+
+## If you face any issues, please contact me via github or on ali@purple7.com

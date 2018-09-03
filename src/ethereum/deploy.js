@@ -4,13 +4,18 @@ const path = require('path');
 const fs = require('fs-extra');
 const lottery = require('./build/Lottery.json');
 
-//const {interface, bytecode} = require('./compile');
+//Add your mnemonic here
+const RINKEBY_MNEM = 'pull vintage tag universe cancel oval inner program mule praise strike tooth';
+//Add your provider URL or infura network URL or leave it as it is if you wish you use mine
+const PROVIDER_URL = 'https://rinkeby.infura.io/L8Yx8J89L13yZbFG30ey';
 
 const provider = new HDWalletProvider(
-    'pull vintage tag universe cancel oval inner program mule praise strike tooth',
-    'https://rinkeby.infura.io/L8Yx8J89L13yZbFG30ey'
+    //mnemonic for ethereum account to deploy with
+    RINKEBY_MNEM,
+    //using infuria as no local node running and not in browser
+    PROVIDER_URL
 );
-
+//this will create web3 instance with provider for rinkeby network
 const web3 = new Web3(provider);
 
 const deploy = async () =>    {
