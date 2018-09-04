@@ -29,6 +29,16 @@ class History extends Component {
     return (
       <div>
         <center>
+        <Header as='h2' textAlign='center'>
+            <Header.Content>
+            <font color='#2701bc'>Winner of Last Round</font>
+            <Header.Subheader>Congratulations on winning <b>{this.props.winnerPot} Ether</b></Header.Subheader>
+            <Header.Subheader>Name : <b>{this.props.winnerName} </b>Address: <b>{this.props.winnerAddy}</b></Header.Subheader>
+            </Header.Content>
+          </Header>
+          <Divider />
+
+          
           <Header as="h3" textAlign="center" onClick={this.toggleVisibility}>
             <font color="#2701bc">
               <Icon name="users" size="large" />
@@ -40,7 +50,7 @@ class History extends Component {
             </Header.Content>
           </Header>
 
-          <Transition visible={visible} animation="scale" duration={500}>
+          <Transition visible={visible} animation="slide down" duration={500}>
             <TransitionGroup>
               <React.Fragment>
                 <Table basic="very" celled collapsing verticalAlign="middle">

@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import {
-  
   Icon,
-
   Header,
   Divider,
-  
   Table
- 
 } from "semantic-ui-react";
 import "babel-polyfill";
 
@@ -62,14 +58,7 @@ class StatusDetail extends Component {
   
   <Divider />
         
-        <Header as='h2' textAlign='center'>
-            <Header.Content>
-            <font color='#2701bc'>Winner of Last Round</font>
-            <Header.Subheader>Congratulations on winning <b>{this.props.winnerPot} Ether</b></Header.Subheader>
-            <Header.Subheader>Name : <b>{this.props.winnerName} </b>Address: <b>{this.props.winnerAddy}</b></Header.Subheader>
-            </Header.Content>
-          </Header>
-          <Divider />
+        
           
       
   </center>
