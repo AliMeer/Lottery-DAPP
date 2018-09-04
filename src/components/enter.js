@@ -14,7 +14,7 @@ class Enter extends Component {
         }
     }
     click() {
-        this.props.parentMethod();
+        this.props.parentMethod(this.state.name);
     }
 
     render() {

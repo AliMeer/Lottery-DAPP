@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Segment, Icon, Label, Header} from 'semantic-ui-react';
+import {Segment, Icon, Label, Header } from 'semantic-ui-react';
 import 'babel-polyfill';
 
 class StatusSummary extends Component   {
@@ -13,6 +13,7 @@ class StatusSummary extends Component   {
             <Header as='h3' textAlign='center'>
             {this.props.balance} Ether up for grabs by {this.props.players} users
             </Header>
+
             </div>
         );
     }
